@@ -43,7 +43,7 @@ btnInicioPausa.addEventListener("click", () => {
     //llamamos a la funcion actualizarCrono, para que sea cargada cada 1000 milisegundos
 
     intervaloTiempo = window.setInterval(actualizaCrono, 1000);
-    btnInicioPausa.innerHTML = `<img src="../06-cronometro/img/btnpausa.jpg" alt="" />`;
+    btnInicioPausa.innerHTML = `<img src="img/btnpausa.jpg" alt="" />`;
 
     //permite ejecutar un fragmento de codigo como un bucle
     btnInicioPausa.classList.remove("inicio");
@@ -51,7 +51,7 @@ btnInicioPausa.addEventListener("click", () => {
     estadoCrono = "iniciado";
   } else {
     window.clearInterval(intervaloTiempo);
-    btnInicioPausa.innerHTML = `<img src="../06-cronometro/img/btninicio1.jpg" alt="" />`;
+    btnInicioPausa.innerHTML = `<img src="img/btninicio1.jpg" alt="" />`;
     btnInicioPausa.classList.remove("pausa");
     btnInicioPausa.classList.add("inicio");
     estadoCrono = "pausado";
@@ -68,7 +68,7 @@ btnReinicio.addEventListener("click", () => {
   cronometro.innerHTML = "00:00:00";
 
   //cambiamos los valores por defecto
-  btnInicioPausa.innerHTML = `<img src="../06-cronometro/img/btninicio1.jpg" alt="" />`;
+  btnInicioPausa.innerHTML = `<img src="img/btninicio1.jpg" alt="" />`;
   btnInicioPausa.classList.remove("pausa");
   btnInicioPausa.classList.add("inicio");
 
